@@ -244,3 +244,19 @@ function disableMusicButton() {
   musicBtn.title = "Add assets/audio/track.mp3 to enable background music";
   musicBtn.classList.remove("playing");
 }
+
+/* автозапуск трека при первом взаимодействии с страницей */
+function tryAutoplay() {
+  if (bgAudio.paused) {
+    bgAudio.play().then(() => {
+      musicBtn.classList.add("playing");
+      musicBtn.setAttribute("aria-pressed", "true");
+    }).catch(() => {});
+  }
+  document.removeEventListener("click", tryAutoplay);
+  document.removeEventListener("keydown", tryAutoplay);
+  document.removeEventListener("scroll", tryAutoplay);
+}
+document.addEventListener("click", tryAutoplay, { once: true });
+document.addEventListener("keydown", tryAutoplay, { once: true });
+document.addEventListener("scroll", tryAutoplay, { once: true });
