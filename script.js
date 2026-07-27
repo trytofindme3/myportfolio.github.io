@@ -246,6 +246,7 @@ function disableMusicButton() {
 }
 
 /* автозапуск трека при первом взаимодействии с страницей */
+/* автозапуск трека при первом клике или нажатии клавиши */
 function tryAutoplay() {
   if (bgAudio.paused) {
     bgAudio.play().then(() => {
@@ -255,8 +256,6 @@ function tryAutoplay() {
   }
   document.removeEventListener("click", tryAutoplay);
   document.removeEventListener("keydown", tryAutoplay);
-  document.removeEventListener("scroll", tryAutoplay);
 }
 document.addEventListener("click", tryAutoplay, { once: true });
 document.addEventListener("keydown", tryAutoplay, { once: true });
-document.addEventListener("scroll", tryAutoplay, { once: true });
