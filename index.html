@@ -17,21 +17,20 @@
 <!-- scanline / noise overlay -->
 <div class="crt-overlay" aria-hidden="true"></div>
 
-<!-- music toggle -->
-<button id="musicToggle" class="music-toggle" type="button" aria-pressed="false" title="Play background track">
-  <span class="music-toggle__icon" aria-hidden="true">
-    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-  </span>
-  <span class="music-toggle__label">SOUND</span>
-</button>
 <audio id="bgAudio" loop preload="none">
   <source src="assets/audio/track.mp3" type="audio/mpeg">
 </audio>
 
-<!-- navbar -->
 <header class="navbar" id="navbar">
-  <img src="assets/avatar.jpg" alt="Olzhas" style="width:36px;height:36px;border-radius:50%;object-fit:cover;margin-right:10px;vertical-align:middle;">
-  <a href="#top" class="navbar__logo">OLZHAS<span>.A</span></a>
+  <div class="navbar__brand">
+    <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false" title="Play background track">
+      <span class="music-toggle__icon" aria-hidden="true">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </span>
+    </button>
+    <img src="assets/avatar.jpg" alt="Olzhas" class="navbar__avatar">
+    <a href="#top" class="navbar__logo">OLZHAS<span>.A</span></a>
+  </div>
 
   <button id="navToggle" class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>

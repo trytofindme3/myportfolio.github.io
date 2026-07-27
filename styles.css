@@ -109,20 +109,18 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* ---------- Music toggle ---------- */
+.navbar__brand { display: flex; align-items: center; gap: 12px; }
+.navbar__avatar { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); }
+
 .music-toggle {
-  position: fixed;
-  top: 20px;
-  left: clamp(20px, 5vw, 64px);
-  z-index: 210;
   display: flex;
   align-items: center;
   gap: 8px;
   background: rgba(12,12,13,0.6);
   border: 1px solid var(--line);
   color: var(--text-dim);
-  padding: 8px 12px;
+  padding: 8px 10px;
   font-size: 10px;
-  letter-spacing: 0.1em;
   border-radius: 999px;
   transition: border-color .2s, color .2s;
 }
