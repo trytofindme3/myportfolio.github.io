@@ -1,8 +1,0 @@
-Положи сюда свой mp3-файл и назови его track.mp3
-(итоговый путь: assets/audio/track.mp3)
-
-Put your track here and name it track.mp3
-(final path: assets/audio/track.mp3)
-
-Кнопка "SOUND" в шапке сайта подключена и заработает автоматически,
-как только файл появится по этому пути. Ничего в коде менять не нужно.
