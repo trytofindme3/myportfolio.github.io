@@ -14,20 +14,6 @@
 
 const WORKS = [
   {
-    id: "coffee-shop",
-    title: "Dum Coffee Shop — Landing Page",
-    category: "uiux",
-    type: "image",
-    image: "assets/works/coffee-shop-ui.jpg"
-  },
-  {
-    id: "basketball",
-    title: "Court Rental — Landing Page",
-    category: "uiux",
-    type: "image",
-    image: "assets/works/basketball-ui.jpg"
-  },
-  {
     id: "codedimension",
     title: "Codedimension — Learning Platform UI",
     category: "uiux",
@@ -41,6 +27,28 @@ const WORKS = [
     category: "uiux",
     type: "image",
     image: "assets/works/dev-portfolio-ui.jpg"
+  },
+  {
+    id: "basketball",
+    title: "Court Rental — Landing Page",
+    category: "uiux",
+    type: "image",
+    image: "assets/works/basketball-ui.jpg"
+  },
+  {
+    id: "coffee-shop",
+    title: "Dum Coffee Shop — Landing Page",
+    category: "uiux",
+    type: "image",
+    image: "assets/works/coffee-shop-ui.jpg"
+  },
+  {
+    id: "coin-motion",
+    title: "Planora — Coin Logo Animation",
+    category: "motion",
+    type: "video",
+    image: "assets/works/coin_motion_poster.jpg",
+    video: "assets/works/coin_motion.mp4"
   },
   {
     id: "drill-campaign",
@@ -91,14 +99,6 @@ const WORKS = [
     category: "print",
     type: "image",
     image: "assets/works/planora-logo.jpg"
-  },
-  {
-    id: "coin-motion",
-    title: "Planora — Coin Logo Animation",
-    category: "motion",
-    type: "video",
-    image: "assets/works/coin_motion_poster.jpg",
-    video: "assets/works/coin_motion.mp4"
   }
 ];
 
