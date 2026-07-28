@@ -15,7 +15,7 @@
 const WORKS = [
   {
     id: "codedimension",
-    title: "Codedimension — Learning Platform UI",
+    title: "Codedimension - Learning Platform UI",
     category: "uiux",
     type: "image",
     image: "assets/works/codedimension-ui-1.jpg",
@@ -23,28 +23,37 @@ const WORKS = [
   },
   {
     id: "dev-portfolio",
-    title: "Developer Portfolio — Personal Site UI",
+    title: "Developer Portfolio - Personal Site UI",
     category: "uiux",
     type: "image",
     image: "assets/works/dev-portfolio-ui.jpg"
   },
   {
     id: "basketball",
-    title: "Court Rental — Landing Page",
+    title: "Court Rental - Landing Page",
     category: "uiux",
     type: "image",
     image: "assets/works/basketball-ui.jpg"
   },
   {
+  id: "neo-tokyo",
+    title: "Neo Tokyo - typography music album website ",
+    category: "uiux",       // или "print", или "motion"
+    type: "image",
+    image: "assets/works/neotokyo1.png",
+    link: "https://neotokiotypography.netlify.app/",
+    gallery: ["assets/works/neotokyo1.png", "assets/works/neotokyo2.png", "assets/works/neotokyo3.png", "assets/works/neotokyo4.png"]
+  },
+  {
     id: "coffee-shop",
-    title: "Dum Coffee Shop — Landing Page",
+    title: "Dum Coffee Shop - Landing Page",
     category: "uiux",
     type: "image",
     image: "assets/works/coffee-shop-ui.jpg"
   },
   {
     id: "coin-motion",
-    title: "Planora — Coin Logo Animation",
+    title: "Planora - Coin Logo Animation",
     category: "motion",
     type: "video",
     image: "assets/works/coin_motion_poster.jpg",
@@ -52,7 +61,7 @@ const WORKS = [
   },
   {
     id: "drill-campaign",
-    title: "AEG Cordless Drill — Ad Campaign",
+    title: "AEG Cordless Drill - Ad Campaign",
     category: "print",
     type: "image",
     image: "assets/works/drill-poster.jpg",
@@ -60,42 +69,42 @@ const WORKS = [
   },
   {
     id: "colours-ostrava",
-    title: "Colours of Ostrava — Festival Poster",
+    title: "Colours of Ostrava - Festival Poster",
     category: "print",
     type: "image",
     image: "assets/works/colours-ostrava-poster.jpg"
   },
   {
     id: "food-fest",
-    title: "Vkusnaya Almaty — Food Festival Poster",
+    title: "Vkusnaya Almaty - Food Festival Poster",
     category: "print",
     type: "image",
     image: "assets/works/food-fest-poster.jpg"
   },
   {
     id: "cellar-wine",
-    title: "Cellar — Wine Packaging Ad",
+    title: "Cellar - Wine Packaging Ad",
     category: "print",
     type: "image",
     image: "assets/works/cellar-wine-poster.jpg"
   },
   {
     id: "little-prince",
-    title: "The Little Prince — Book Cover",
+    title: "The Little Prince - Book Cover",
     category: "print",
     type: "image",
     image: "assets/works/little-prince-cover.jpg"
   },
   {
     id: "music-magazine",
-    title: "Read & Music — Magazine Layout",
+    title: "Read & Music - Magazine Layout",
     category: "print",
     type: "image",
     image: "assets/works/music-magazine.jpg"
   },
   {
     id: "planora",
-    title: "Planora — Logo & Brand Identity",
+    title: "Planora - Logo & Brand Identity",
     category: "print",
     type: "image",
     image: "assets/works/planora-logo.jpg"
@@ -175,6 +184,7 @@ function openLightbox(w) {
         <p>${CAT_LABEL[w.category]}</p>
         <h3>${w.title}</h3>
       </div>
+      ${w.link ? `<a href="${w.link}" target="_blank" rel="noopener" class="btn btn--ghost">${w.linkLabel || "View Project"} &#8599;</a>` : ""}
     </div>
     ${galleryHTML}
   `;
