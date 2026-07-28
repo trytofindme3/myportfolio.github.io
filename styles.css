@@ -26,6 +26,12 @@ body {
   font-family: var(--font);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  animation: pageFadeIn 0.9s ease both;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 img, video { max-width: 100%; display: block; }
@@ -67,6 +73,7 @@ button { font-family: inherit; cursor: pointer; }
   justify-content: space-between;
   padding: 20px clamp(20px, 5vw, 64px);
   background: linear-gradient(to bottom, rgba(6,6,7,0.85), transparent);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 
