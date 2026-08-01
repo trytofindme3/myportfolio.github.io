@@ -68,6 +68,21 @@ const WORKS = [
     gallery: ["assets/works/drill-poster.jpg", "assets/works/product-cards.jpg", "assets/works/cover-design.jpg"]
   },
   {
+    id: "little-prince",
+    title: "The Little Prince - Book Cover",
+    category: "print",
+    type: "image",
+    image: "assets/works/little-prince-cover.jpg"
+  },
+  {
+    id: "music-magazine",
+    title: "Read & Music - Magazine Layout",
+    category: "print",
+    type: "image",
+    link: "https://www.behance.net/gallery/95928101/zhurnal",
+    image: "assets/works/music-magazine.jpg"
+  },
+  {
     id: "colours-ostrava",
     title: "Colours of Ostrava - Festival Poster",
     category: "print",
@@ -87,21 +102,6 @@ const WORKS = [
     category: "print",
     type: "image",
     image: "assets/works/cellar-wine-poster.jpg"
-  },
-  {
-    id: "little-prince",
-    title: "The Little Prince - Book Cover",
-    category: "print",
-    type: "image",
-    image: "assets/works/little-prince-cover.jpg"
-  },
-  {
-    id: "music-magazine",
-    title: "Read & Music - Magazine Layout",
-    category: "print",
-    type: "image",
-    link: "https://www.behance.net/gallery/95928101/zhurnal",
-    image: "assets/works/music-magazine.jpg"
   },
   {
     id: "planora",
@@ -132,6 +132,7 @@ function renderWorks(filter) {
       <div class="work-card__media">
         <img src="${w.image}" alt="${w.title}" loading="lazy">
         ${isVideo ? `<div class="work-card__play"><span>&#9658;</span></div>` : ""}
+        ${w.link ? `<span class="work-card__live">LIVE &#8599;</span>` : ""}
         <span class="work-card__corner tl"></span>
         <span class="work-card__corner tr"></span>
         <span class="work-card__corner bl"></span>
