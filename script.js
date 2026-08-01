@@ -100,6 +100,7 @@ const WORKS = [
     title: "Read & Music - Magazine Layout",
     category: "print",
     type: "image",
+    link: "https://www.behance.net/gallery/95928101/zhurnal",
     image: "assets/works/music-magazine.jpg"
   },
   {
